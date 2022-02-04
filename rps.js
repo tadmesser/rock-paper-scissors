@@ -7,7 +7,7 @@
 let playerCount = 0;
 let computerCount = 0
 
-for (let i = 0 ; i < 5 ; i++){
+for (let i = 0 ; i<=5 ; i++){
     function computerPlay() {
 
         let selections = ['rock', 'paper', 'scissors'];
@@ -70,7 +70,9 @@ for (let i = 0 ; i < 5 ; i++){
     console.log("You: " + playerCount + ' vs Computer: ' + computerCount)
     if (playerCount >= 3) {
         console.log("IT'S OVER. YOU WIN!!");
+        break;
     } else if (computerCount >= 3) {
         console.log("IT'S OVER. YOU LOSE!!");
+        break;
     }
 }    
